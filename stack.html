@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacks</title>
+</head>
+<body>
+    <h1>Javascript Arrays</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <h2>Methods in arrays</h2>
+    <p>join() and pop()</p>
+    <p>The join() method joins array elements into a string and the pop() method removes the last element from an array</p>
+    <p id="myjoin"></p>
+    <p id="mypop"></p>
+    <p id="mypop1"></p>
+
+
+    <h2>Javascript Functions</h2>
+    <p>Do a calculation and then display the results</p>
+    <p id="demo2"></p>
+    <script>
+         //JS functions
+        function add(a,b){
+            return a + b;
+        }
+        function avarage(a,b){
+            return add(a,b)/2;
+        }
+        let results = average(10, 20);
+        document.getElementById("demo2").innerHTML=results;
+
+
+        //arrays
+        var cars = ["Mercedes", "Volvo", "BMW"];
+        document.getElementById("demo").innerHTML = cars;
+        document.getElementById("demo1").innerHTML = cars[2];
+
+        //join() and pop()
+        var fruits = [
+            "mango", "banana", "apples", "grapes"
+        ];
+        document.getElementById("myjoin").innerHTML=fruits.join(" and ");
+        document.getElementById("mypop").innerHTML=fruits.pop();
+        document.getElementById("mypop1").innerHTML=fruits;
+
+
+       
+
+    </script>
+    
+</body>
+</html>
